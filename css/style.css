@@ -1,0 +1,111 @@
+.container{
+  max-width:1140px;
+}
+
+.row{
+  display: block;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+
+.row::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.red{
+  background-color: #ff3838;
+}
+
+.green{
+  background-color: #3ae374;
+}
+
+.translate{
+  transform: translate(100px,100px);
+  -webkit-transform:translate(100px,100px); /* will allow you to run in safari browsers */
+  -ms-transform:translate(100px,100px); /* will allow you to run in IE9 browsers */
+  -moz-transform:translate(100px,100px); /* will allow you to run in firefox browsers */
+}
+
+.rotate{
+  transform: rotate(45deg);
+}
+
+.scale{
+  transform: scale(0.5);
+}
+
+.skewX{
+  transform: skewX(20deg);
+}
+
+.matrix{
+  /* matrix(scaleX, skewY, skewX, scaleY, translateX, translateY) */
+  transform: matrix(1,0.9,0.2,1,5,10);
+}
+
+.transition{
+  /* transition-delay: 2s; */
+  /* transition: width 2s, background-color 2s;
+  transition-timing-function: ease-in; */
+  transition: 2s all ease-in;
+}
+
+.transition:hover{
+  width: 500px;
+  background-color: #17c0eb;
+  /* height: 10px; */
+  transform: rotate(720deg);
+  /* transform: matrix(1,0.9,0.2,1,5,10); */
+}
+
+#rotateBox{
+  transition: 2s all ease-in;
+}
+
+.rotate360{
+  transform: rotate(45deg);
+  width: 200px;
+  height: 200px;
+}
+
+/* Missed the HTML for this :( ) */
+/* #flexContainer{
+  transition: 1s all ease-in;
+  display: flex;
+}
+
+.collumn{
+  transition: 1s all ease-in;
+  flex: 1;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.grow{
+  flex: 2;
+} */
+
+.menu div{
+  background-color: black;
+  height: 20px;
+  width: 100px;
+  content: '';
+}
+
+.middle{
+  margin: 10px 0px;
+}
+
+.hide{
+  display: none;
+}
